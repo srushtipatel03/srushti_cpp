@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
-
 int main()
 {
-    int a;
-    for(a=10;a>=1;a--)
+    char a=65;
+    while(a<=90)
     {
         cout << a;
+        a++;
     }
 }
