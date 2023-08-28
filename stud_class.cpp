@@ -1,3 +1,17 @@
+/*1. Define a class student with the following specification
+
+Private members of class student
+admno integer
+sname 20 character
+eng, math, sci float
+total float
+ctotal() a function to calculate eng + math + sci with float return type.
+
+Public member function of class student
+Takedata() Function to accept values for admno, sname, eng, sci and invoke
+ctotal() to calculate total.
+Showdata() Function to display all the data members on the screen*/
+
 #include <iostream>
 
 using namespace std;
