@@ -18,3 +18,4 @@ int main()
 
  cout << employee1.name << "\n" << employee1.salary << "\n" << employee1.employee_id;
 }
+ 
