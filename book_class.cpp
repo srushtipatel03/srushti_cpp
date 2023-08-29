@@ -46,7 +46,7 @@ class BOOK {
 int main ()
 {
   BOOK cost; // stu is a student class object
-    // cost.TOTAL_COST();
+    
      cost.INPUT();
      cost.PURCHASE();
 

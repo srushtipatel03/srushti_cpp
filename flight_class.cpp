@@ -17,7 +17,7 @@ Distance & call function CALFUEL() to calculate the quantity of Fuel
 A function SHOWINFO() to allow user to view the content of all the data members*/
 
 #include <iostream>
-#include <string>
+#include <string.h>
 using namespace std;
 
 class Flight {
