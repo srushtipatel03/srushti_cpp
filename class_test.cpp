@@ -18,15 +18,16 @@ Public Members
 using namespace std;
 class TEST {
   private:
+  
     int TestCode;
     string Description;
     int NoCandidate;
     int CenterReqd;
 
-  public:
     int CALCNTR() {
       return ( NoCandidate / 100 + 1);
     }
+    public:
 
     void SCHEDULE() {
       cout << "Enter Test Code: ";
@@ -48,7 +49,7 @@ class TEST {
 int main ()
 {
      TEST stu; // stu is a test class object
-     stu.CALCNTR();
+     
      stu.SCHEDULE();
      stu.DISPTEST();
     return 0;

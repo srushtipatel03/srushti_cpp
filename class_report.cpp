@@ -18,13 +18,14 @@ using namespace std;
 class Student {
   private:
     int adno;
-    char name[21];
+    char name[20];
     float marks[5];
     float average;
 
     float GETAVG() {
       float sum = 0;
-      for(int i = 0; i < 5; i++) {
+      for(int i = 0; i < 5; i++) 
+      {
         sum += marks[i];
       }
       return sum / 5;
