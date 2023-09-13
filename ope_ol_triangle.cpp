@@ -1,44 +1,45 @@
-// operator overloading
-
 #include <iostream>
+
 using namespace std;
-class triangle
+class Triangle
 {
-    int length, height, breath;
+    double base;
+    double height;
 
-    public:
-    void setdata(int len, int he, int bre)
+    public :
+
+    void setdata(double b , double h)
     {
-        length = len;
-        height = he;
-        breath = bre;
+        base = b;
+        height = h;
     }
-    triangle operator+(triangle &b)
-    {
-        triangle tri;
 
-        tri.length = length + b.length;
-        tri.height = height + b.height;
-        tri.breath = breath + b.breath;
+    Triangle operator+(Triangle &t)
+    {
+        Triangle tri;
+
+        tri.base = base + t.base;
+        tri.height = height + t.height;
 
         return tri;
     }
-    int getdata()
+
+    double getdat()
     {
-        return length*height*breath;
+        return (base * height) / 2;
     }
 };
 
 int main()
 {
-    triangle tri1, tri2, tri3;
+    Triangle tr1,tr2,tr3;
 
-    tri1.setdata(2,2,2);
-    cout << "triangle 1 is : " << tri1.getdata() << endl;
+    tr1.setdata(4.5,2.6);
+    cout <<"Triangle 1 Value is : " << tr1.getdat() << endl;
+    
+    tr2.setdata(8.5,4.6);
+    cout <<"Triangle 2 Value is : " << tr2.getdat() << endl;
 
-    tri2.setdata(3,3,3);
-    cout << "triangle 2 is : " << tri2.getdata() << endl;
-
-    tri3 = tri1 + tri2;
-    cout << "triangle 3 --> the total of triangle 1 & triangle 2 is : " << tri3.getdata() << endl;
+    tr3 = tr1 + tr2;
+    cout <<"Triangle 3 Value is : " << tr3.getdat() << endl;
 }
