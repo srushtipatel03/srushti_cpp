@@ -7,15 +7,16 @@ class BANK
    int d,w,sb=0;
 
    public:
-   int deposite()
+
+   void deposite()
    {
-    cout << "enter amount :";
+    cout << "enter the deposite amount :";
     cin >> d;
     sb=sb+d;
    }
    void withdraw()
    {
-    cout << "enter the amount :";
+    cout << "enter the withdraw the amount :";
     cin >> w;
     sb=sb-w;
    }
@@ -32,7 +33,7 @@ int main()
 
     cout << "press 1 for deposite amount" << endl;
     cout << "press 2 for withdraw amount" << endl;
-    cout << "press 3 for desplay your amount" << endl;
+    cout << "press 3 for desplay your current amount" << endl;
     cout << "press 0 for exit" << endl;
     cout << "\n \n";
 
