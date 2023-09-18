@@ -12,7 +12,7 @@ class Squar
         s = sq;
     }
 
-    double getdat()
+    double getdata()
     {
         return s * s;
     }
@@ -33,8 +33,8 @@ int main()
     Squar sq1;
 
     sq1.setdata(12);
-    cout << " Squar 1 Value is : "<< sq1.getdat() << endl;
+    cout << " Squar 1 Value is : "<< sq1.getdata() << endl;
     
     ++sq1;
-    cout << " Squar 2 Value is : "<< sq1.getdat() << endl;
+    cout << " Squar 2 Value is : "<< sq1.getdata() << endl;
 }
