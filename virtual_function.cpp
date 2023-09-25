@@ -1,4 +1,4 @@
-// Ryntime polymorphism
+// Runtime polymorphism
 // Virtual Functions
 
 #include <iostream>
